@@ -1,0 +1,72 @@
+@import 'settings';
+@import 'foundation-emails';
+
+@import 'template/template';
+
+$primary-color: #e16e1e;
+$secondary-color: #1c323b;
+.steps {
+    margin-top: 20px;
+
+    
+    .active {       
+        th {
+            color: $white;
+            background-image: url(../assets/img/active-step.png);
+            background-repeat: no-repeat;
+            padding-left: 5px;            
+        }
+    }
+    .inactive {
+        th {
+            color: $dark-gray;
+            padding-left: 5px;
+            background-image: url(../assets/img/step.png);
+            background-repeat: no-repeat;            
+        }
+    }
+}
+// wrapper
+
+.wrapper {
+    
+    &.header {
+        background-color: $secondary-color;
+
+        .container {
+            background-color: $secondary-color;
+        }
+    }
+    &.primary {
+        background: $primary-color;
+        
+        .container {
+            background: $primary-color;
+        }
+    
+        td, p {
+            color: $white;    
+        }
+    }
+    &.light {
+        background-color: $white;
+
+        .container {
+            background-color: $white;
+        }
+
+        h2 {
+            color: $primary-color;
+        }
+    }
+
+}
+
+img {
+
+    &.floating {
+        position: absolute;
+        left: 30%;
+        margin-top: -170px;
+    }
+}
