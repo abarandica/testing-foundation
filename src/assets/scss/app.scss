@@ -11,18 +11,26 @@ $secondary-color: #1c323b;
     
     .active {       
         th {
+            padding: 10px;                        
             color: $white;
-            background-image: url(../assets/img/active-step.png);
+            background-image: url(http://imgur.com/6feMq36.png);
             background-repeat: no-repeat;
-            padding-left: 5px;            
+            background-position: center;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
     .inactive {
         th {
+            padding: 10px;
             color: $dark-gray;
-            padding-left: 5px;
-            background-image: url(../assets/img/step.png);
-            background-repeat: no-repeat;            
+            background-position: center; 
+            background-image: url(http://imgur.com/vOxhaqd.png);
+            background-repeat: no-repeat;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
         }
     }
 }
@@ -62,11 +70,9 @@ $secondary-color: #1c323b;
 
 }
 
-img {
-
-    &.floating {
-        position: absolute;
-        left: 30%;
-        margin-top: -170px;
-    }
+.summary {
+    background-image: url(http://imgur.com/BoRJa1R.png) !important;
+    background-repeat: no-repeat!important;
+    background-position-x: center!important;
+    background-position-y: -110px!important;
 }
